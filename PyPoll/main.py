@@ -38,3 +38,14 @@ for candidate, votes in candidate_votes.items():
 print("-------------------------")
 print(f"Winner: {winner}")
 print("-------------------------")
+
+with open("/Users/oumadiak99/Desktop/Homework Challenge/python-challenge/PyPoll/analysis/PyPoll.txt", "w") as file:
+    file.write("Election Results\n")
+    file.write("-------------------------\n")
+    file.write(f"Total Votes: {total_votes}\n")
+    file.write("-------------------------\n")
+    for candidate, votes in candidate_votes.items():
+        file.write(f"{candidate}: {candidate_percentages[candidate]:.3f}% ({votes})\n")
+    file.write("-------------------------\n")
+    file.write(f"Winner: {winner}\n")
+    file.write("-------------------------\n")

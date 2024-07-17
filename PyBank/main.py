@@ -49,3 +49,17 @@ print(f"Total: ${net_total}")
 print(f"Average Change: ${average_change:.2f}")
 print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")
 print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")
+
+with open("/Users/oumadiak99/Desktop/Homework Challenge/python-challenge/PyBank/analysis/PyBank.txt", “w”) as file:
+        file.write(“Financial Analysis\n”)
+        file.write(“....................................................................................\n”)
+        file.write(f”Total Months: {total_months}\n”)
+        file.write(f”Total: ${net_total)}\n”)
+        file.write(f”Average Change: ${average_change:.2f}\n”)
+        file.write(f”Greatest Increase in Profits: {months[revenue_change.index(greatest_increase) + 1]} (${greatest_increase})\n”)
+        file.write(f”Greatest Decrease in Profits: {months[revenue_change.index(greatest_decrease) + 1]} (${greatest_decrease})\n”)
+
+
+
+
+
